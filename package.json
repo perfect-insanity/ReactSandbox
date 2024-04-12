@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  },
+  "scripts": {
+    "server": "node backend/main.js",
+    "client-build": "npm --prefix ./frontend run build",
+    "client-start": "npm --prefix ./frontend start",
+    "update": "npm run client-build && npm run server"
+  }
+}
